@@ -92,7 +92,7 @@ function evaluateLoanV2(
 
 // Corrected function call (parameter order fixed)
 evaluateLoan(
-    "Jagjivan",     // customerName
+    "Jagjivan",  // customerName
     50000,       // income
     true,        // isEmployed
     50.4,        // debtToIncomeRatio
