@@ -1,7 +1,11 @@
-
 {
   "type": "commonjs",
+  "scripts": {
+    "start:ts": "node --loader ts-node/esm src/index.ts",
+    "start:js": "node src/index.js"
+  },
   "devDependencies": {
+    "@types/node": "^20.19.39",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.2"
   }
