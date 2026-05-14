@@ -16,3 +16,11 @@ test('get started link', async ({ page }) => {
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
+
+test('test', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+  await expect(page.getByRole('link', { name: 'MCP', exact: true })).toBeVisible();
+  await page.getByRole('link', { name: 'MCP', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Browser Automation' })).toBeVisible();
+  await expect(page.locator('#quick-start')).toContainText('Quick Start');
+});
